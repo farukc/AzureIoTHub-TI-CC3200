@@ -22,7 +22,7 @@ Texas Instruments is a certified partner for Microsoft Azure and TI CC3200 is sh
       5. You will see that your IoT Hub started to be created : 
       ![](images/04_Azure_IoT_Hub_creation.png)
       6. When your IoT Hub created, click on its tile and you should see its details similar to the shown below : 
-      ![](images/05_Azure_IoT_Hub_creation.png)
+      ![](images/04_Azure_IoT_Hub_creation.png)
       7. 
   
  2. 
