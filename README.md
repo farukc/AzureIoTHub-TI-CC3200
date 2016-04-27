@@ -17,7 +17,7 @@ Texas Instruments is a certified partner for Microsoft Azure and TI CC3200 is sh
       ![](images/01_Azure_IoT_Hub_creation.png)
       3. Select "Internet of Things" and then "Azure IoT Hub" as shown below : 
       ![](images/02_Azure_IoT_Hub_creation.png)
-      4. Give a "Name" to your IoT Hub being sure that you received green check after typing your iot hub name, pick "Pricing and scale tier" as Free (you can have only one Free IoT Hub per each Azure subscription), keep "IoT Hub units" value as one and pick the lowes value for "Device-to-cloud partitions" as we will not put this system on production yet, give a name to your "Resource group", pick the right Azure Subscription in case if you have multiple Azure subscriptions, pick the "Location" and check the "Pin to dashboard" to be able to reach your Azure IoT Hub quickly through your portal dashboard.
+      4. Give a "Name" to your IoT Hub being sure that you received check mark after typing your iot hub name, pick "Pricing and scale tier" as Free (you can have only one Free IoT Hub per each Azure subscription), keep "IoT Hub units" value as one and pick the lowes value for "Device-to-cloud partitions" as we will not put this system on production yet, give a name to your "Resource group", pick the right Azure Subscription in case if you have multiple Azure subscriptions, pick the "Location" and check the "Pin to dashboard" to be able to reach your Azure IoT Hub quickly through your portal dashboard.
       ![](images/03_Azure_IoT_Hub_creation.png)
       5. You will see that your IoT Hub started to be created : 
       ![](images/04_Azure_IoT_Hub_creation.png)
