@@ -1,6 +1,6 @@
 ## (Documentation is not finished yet!)
 # Sample Energia code connecting Microsoft Azure IoT Hub with a TI CC3200 Launchpad XL
-Texas Instruments is a certified partner for Microsoft Azure and TI CC3200 is shown Microsoft Azure IoT Developer Center
+Texas Instruments is a certified partner for Microsoft Azure and TI CC3200 is shown Microsoft Azure IoT Developer Center. But the documentation in Azure IoT Developer Center includes an example for C code only. What if you want to connect Azure IoT Hub using Energia ?
 
 ### Requirements:
 - TI CC3200 Launchpad XL
