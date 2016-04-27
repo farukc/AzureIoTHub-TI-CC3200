@@ -23,17 +23,17 @@ Texas Instruments is a certified partner for Microsoft Azure and TI CC3200 is sh
       ![](images/04_Azure_IoT_Hub_creation.png)
       6. When your IoT Hub created, click on its tile and you should see its details similar to the shown below : 
       ![](images/05_Azure_IoT_Hub_creation.png)
-      7. 
+      7. Click on "Shared access policies", "iothubowner" to see the "Connection String"(s) which will be using in coming steps
+      ![](images/06_Azure_IoT_Hub_creation.png)
+      8. Just copy and note somewhere either of primary/secondary connection strings to use it in your Energia code
+   3. Connect your Azure IoT Hub using "Device Explorer" : 
+      1. Go ahead and download free tool [Azure Devic Explorer](https://github.com/Azure/azure-iot-sdks/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md) and install
+      2. 
+      
+   4. Create a "device" in your IoT Hub : 
   
- 2. 
-   
- 2 - 
-
-
-
-Go to "Settings" of your Azure IoT Hub and obtain your connection string
-
-Go ahead and download free tool [Azure Device Explorer](https://github.com/Azure/azure-iot-sdks/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md) and connect using the connection string.
+ 2. Modifying necesary lines in "TICC3200_AzureIoTHub_Client.ino"
+ 3. Run the code and see that it is sending data to IoT Hub
 
 After connecting your IoT Hub in Device Explorer tool, switch to "Management" tab and create a device by clicking "Create" button. Clicking "Refresh" button will show your device. Right-mouse click on your newly created device and select "Copy connection string for selected device" to have the connection string for this device and put this in "AzureIoTHub.ino" file by finding the line below : 
 
