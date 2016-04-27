@@ -12,9 +12,11 @@ Texas Instruments is a certified partner for Microsoft Azure and TI CC3200 is sh
    1. Create a Microsoft Azure free trial account from [here](https://azure.microsoft.com/en-us/pricing/free-trial/) if you haven't used Microsoft Azure IoT Hub. 
    2. Create Azure IoT Hub :
       1. Go to http://portal.azure.com and login to the portal
-      2. Click "New" as shown : 
+      2. Click "New" as shown below : 
       ![](images/01_Azure_IoT_Hub_creation.png)
-      3. 
+      3. Select "Internet of Things" and then "Azure IoT Hub" as shown below : 
+      ![](images/02_Azure_IoT_Hub_creation.png)
+      4.
   
  2. 
    
