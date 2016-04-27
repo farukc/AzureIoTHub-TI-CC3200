@@ -5,12 +5,18 @@ Texas Instruments is a certified partner for Microsoft Azure and TI CC3200 is sh
 - TI CC3200 Launchpad XL
 - Microsoft Azure IoT Hub
 
-P.S. : Please follow http://www.ti.com/cc3200start if you haven't write code to run on TI CC3200 Launchpad XL using Energia(http://www.energia.nu)
+**P.S.** : Please follow http://www.ti.com/cc3200start if you haven't write code to run on TI CC3200 Launchpad XL using Energia(http://www.energia.nu)
 
 ## Step-by-step instructions:
- 1 - Microsoft Azure IoT Hub part : 
-   1.1. - Create a Microsoft Azure free trial account from [here](https://azure.microsoft.com/en-us/pricing/free-trial/) if you haven't used Microsoft Azure IoT Hub. Login to Microsoft Azure Portal http://portal.azure.com and createa a new Azure IoT Hub. A free tier will give you 80.000 messages/day which is quiet enough for your dev/test purposes.
-   
+ 1. Preparation of Microsoft Azure IoT Hub  : 
+   1. Create a Microsoft Azure free trial account from [here](https://azure.microsoft.com/en-us/pricing/free-trial/) if you haven't used Microsoft Azure IoT Hub. 
+   2. Create Azure IoT Hub :
+      1. Go to http://portal.azure.com and login to the portal
+      2. Click "New" as shown : 
+      ![](images/01_Azure_IoT_Hub_creation.png)
+      3. 
+  
+ 2. 
    
  2 - 
 
