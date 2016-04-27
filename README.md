@@ -23,9 +23,9 @@ Texas Instruments is a certified partner for Microsoft Azure and TI CC3200 is sh
       ![](images/04_Azure_IoT_Hub_creation.png)
       6. When your IoT Hub created, click on its tile and you should see its details similar to the shown below : 
       ![](images/05_Azure_IoT_Hub_creation.png)
-      7. Click on "Shared access policies", "iothubowner" to see the "Connection String"(s) which will be using in coming steps
+      7. Click on "Shared access policies", "iothubowner" to see the "Connection String"(s) 
       ![](images/06_Azure_IoT_Hub_creation.png)
-      8. Just copy and note somewhere either of primary/secondary connection strings to use it in your Energia code
+      8. Just copy and note either of primary/secondary connection strings somewhere which will be using in coming steps
    3. Connect your Azure IoT Hub using "Device Explorer" : 
       1. Go ahead and download free tool [Azure Devic Explorer](https://github.com/Azure/azure-iot-sdks/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md) and install
       2. 
