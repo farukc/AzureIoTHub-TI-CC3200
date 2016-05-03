@@ -18,7 +18,7 @@ In this document (and the code in the repo) you will
   2. Create an Azure Stream Analytics job and write your query retrieving your telemetry data from IoT Hub to PowerBI
  3. Learn how to show your telemetry data in Microsoft PowerBI
   1. Create your free trial Microsoft PowerBI account
-  2. Learn how to use the "dataset" and the table to show your telemetry data live in a PowerBI dashboard
+  2. Learn how to use the dataset created by your Azure Stream Analytics job and show your telemetry data in this dataset live in a PowerBI dashboard
 
 ### Step-by-step instructions:
  1. Preparation of Microsoft Azure IoT Hub  : 
