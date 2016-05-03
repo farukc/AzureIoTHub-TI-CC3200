@@ -1,12 +1,24 @@
 ## (Documentation is not finished yet!)
 # Sample Energia code connecting Microsoft Azure IoT Hub with a TI CC3200 Launchpad XL
-Texas Instruments is one of the [Microsoft Azure Certified IoT partner] (https://azure.microsoft.com/en-us/marketplace/certified-iot-partners/) and TI CC3200 is listed in [Microsoft Azure IoT Developer Center](https://azure.microsoft.com/en-us/develop/iot/get-started/). But the documentation in Azure IoT Developer Center includes an example for C code only. What if you want to connect Azure IoT Hub using Energia ?
+Texas Instruments is one of the [Microsoft Azure Certified IoT partner] (https://azure.microsoft.com/en-us/marketplace/certified-iot-partners/) and TI CC3200 is listed in [Microsoft Azure IoT Developer Center](https://azure.microsoft.com/en-us/develop/iot/get-started/). Documentation in Azure IoT Developer Center includes an example for C code only. This document is prepared for TI CC3200 users who wants to connect to Azure IoT Hub using their  [Energia](http://www.energia.nu) IDE to start exploring the IoT world quickly.
 
 ### Requirements:
 - TI CC3200 Launchpad XL
-- Microsoft Azure IoT Hub
+- A Microsoft Account (if you have any @hotmail.com, @live.com etc. email you already have one)
+- Microsoft Azure Subscription (Azure free trial is OK as well)
+- Following (http://www.ti.com/cc3200start) if you're just starting to write code for TI CC3200 Launchpad XL using Energia(http://www.energia.nu)
 
-**P.S.** : Please follow http://www.ti.com/cc3200start if you haven't write code to run on TI CC3200 Launchpad XL using Energia(http://www.energia.nu)
+### Overview : 
+In this document (and the code in the repo) you will 
+ 1. Connect your TI CC3200 to Azure IoT Hub
+  1. Create an Azure free trial account
+  2. Create an Azure IoT Hub
+ 2. Learn how to get your telemetry data out of Azure Stream Analytics
+  1. Create an Azure Stream Analytics service and define the input and output to it
+  2. Create an Azure Stream Analytics job and write your query retrieving your telemetry data from IoT Hub to PowerBI
+ 3. Learn how to show your telemetry data in Microsoft PowerBI
+  1. Create your free trial Microsoft PowerBI account
+  2. Learn how to use the "dataset" and the table to show your telemetry data live in a PowerBI dashboard
 
 ### Step-by-step instructions:
  1. Preparation of Microsoft Azure IoT Hub  : 
