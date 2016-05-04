@@ -41,7 +41,7 @@ In this document (and the code in the repo) you will
       ![](images/06_Azure_IoT_Hub_creation.png)
       8. Just copy and note either of primary/secondary connection strings somewhere which will be using in coming steps
    3. Connect your Azure IoT Hub using "Device Explorer" : 
-      1. Go ahead and download free tool [Azure Devic Explorer](https://github.com/Azure/azure-iot-sdks/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md) and install
+      1. Go ahead and download free tool [Azure Device Explorer](https://github.com/Azure/azure-iot-sdks/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md) and install
       2. 
       
    4. Create a "device" in your IoT Hub : 
