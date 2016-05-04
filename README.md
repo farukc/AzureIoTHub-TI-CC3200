@@ -13,7 +13,8 @@ In this document (and the code in the repo) you will
  1. Connect your TI CC3200 to Azure IoT Hub
   1. Create an Azure free trial account
   2. Create an Azure IoT Hub
-  3. Program your CC3200 to connect your  Azure IoT Hub
+  3. Connect to your Azure IoT Hub using "Device Explorer" tool
+  3. Program your CC3200 to connect your Azure IoT Hub
  2. Learn how to get your telemetry data out of [Azure Stream Analytics](https://azure.microsoft.com/en-us/services/stream-analytics/)
   1. Create an Azure Stream Analytics service and define the [input](https://azure.microsoft.com/en-us/documentation/articles/stream-analytics-define-inputs/) and [output](https://azure.microsoft.com/en-us/documentation/articles/stream-analytics-define-outputs/) to it
   2. Create an Azure Stream Analytics job and write your query retrieving your telemetry data from IoT Hub to [PowerBI](http://www.powerbi.com)
