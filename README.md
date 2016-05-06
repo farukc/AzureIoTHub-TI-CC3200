@@ -53,15 +53,15 @@ In this document (and the code in the repo) you will
     1. Download all the files from this repo to a folder in your machine )
     2. Run your Energia and open "TICC3200_AzureIoTHub_Client.ino" sketch and put your WiFi name and password in the lines below
 
-````
+     ````Arduino
      // START: WiFi settings
      char SSID[] = "{YourWifiSSID}";
      char PASSWORD[] = "{YourWifiPassword}";
      // END: WiFi settings
-     ```
+     ````
     3. Copy/paste your device connection string you noted down in Step 1/iii/e and paste in the same "TICC3200_AzureIoTHub_Client.ino" sketch : 
     
-````
+    ````
 
      //Azure IoT Hub connection string
      String IoTHubConnectionString = "{PUT YOUR IOT HUB CONNECTION STRING HERE}";
