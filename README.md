@@ -27,7 +27,7 @@ In this document (and the code in the repo) you will
   1. Create an Azure free trial account
      Create a Microsoft Azure free trial account from [here](https://azure.microsoft.com/en-us/pricing/free-trial/) if you haven't used Microsoft Azure IoT Hub. 
   2. Create an Azure IoT Hub
-      1. Go to http://portal.azure.com and login to the portal
+      1. Go to [http://portal.azure.com](http://portal.azure.com) and login to the portal
       2. Click "New" as shown below : 
       ![](images/01_Azure_IoT_Hub_creation.png)
       3. Select "Internet of Things" and then "Azure IoT Hub" as shown below : 
@@ -47,11 +47,19 @@ In this document (and the code in the repo) you will
       3. Switch to "Management" tab and click "Create" button to create a new "device" in your IoT hub.
       4. In the "" window give any name to your device (like "myCC3200-01"). You should get "" message when device is created in your IoT Hub
       5. Right-mouse click on your device in the "Devices" list and select "" from the context menu. Note this connection string down
-     
-   4. Program your CC3200 to connect your Azure IoT Hub : 
-  
- 2.Program your CC3200 to connect your  Azure IoT Hub
-  1.Modifying necesary lines in "TICC3200_AzureIoTHub_Client.ino"
+ 
+ 2.Program your CC3200 to connect your Azure IoT Hub
+  1.Modifying necesary lines in "TICC3200_AzureIoTHub_Client.ino":
+    1. Download all the files from this repo to a folder in your machine )
+    2. Run your Energia and open "TICC3200_AzureIoTHub_Client.ino" sketch and put your WiFi name and password in the lines below 
+    ```
+// START: WiFi settings
+char SSID[] = "{YourWifiSSID}";
+char PASSWORD[] = "{YourWifiPassword}";
+// END: WiFi settings
+```
+
+    3. 
   2.Run the code and see that it is sending data to IoT Hub
 
 After connecting your IoT Hub in Device Explorer tool, switch to "Management" tab and create a device by clicking "Create" button. Clicking "Refresh" button will show your device. Right-mouse click on your newly created device and select "Copy connection string for selected device" to have the connection string for this device and put this in "AzureIoTHub.ino" file by finding the line below : 
@@ -62,6 +70,17 @@ After connecting your IoT Hub in Device Explorer tool, switch to "Management" ta
 
 Now you are ready to program your TI CC3200
 
+ 2. Get your telemetry data out of Azure Stream Analytics: 
+  1. Create an Azure Stream Analytics service and define the "input" and "output"
+   1. Go to [http://portal.azure.com](http://portal.azure.com) and login to the portal
+   2. Click "New" and select "Internet of Things" and then "Stream Analytics job" as shown below : 
+   3. 
+  2. Create an Azure Stream Analytics job and write your query retrieving your telemetry data from IoT Hub to PowerBI
+  3. 
+
+ 3. See how to show your telemetry data in Microsoft PowerBI
+  1. Create your free trial Microsoft PowerBI account
+  2. See how to use the dataset created by your Azure Stream Analytics job and show your telemetry data in this dataset live in a PowerBI dashboard
 
 
 
