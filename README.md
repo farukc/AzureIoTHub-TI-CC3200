@@ -72,7 +72,7 @@ In this document (and the code in the repo) you will
     
  2. Get your telemetry data out of Azure Stream Analytics: 
   1. Create an Azure Stream Analytics service and define the "input" and "output"
-   1. Go to [http://portal.azure.com](http://portal.azure.com){:target="_blank"} and login to the portal
+   1. Go to [http://portal.azure.com](http://portal.azure.com) and login to the portal
    2. Click "New" and select "Internet of Things" and then "Stream Analytics job" as shown below : 
    3. 
   2. Create an Azure Stream Analytics job and write your query retrieving your telemetry data from IoT Hub to PowerBI
