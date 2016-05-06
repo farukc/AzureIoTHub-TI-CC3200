@@ -58,6 +58,7 @@ char SSID[] = "{YourWifiSSID}";
 char PASSWORD[] = "{YourWifiPassword}";
 // END: WiFi settings
 ```
+
     3. Copy/paste your device connection string you noted down in Step 1/iii/e and paste in the same "TICC3200_AzureIoTHub_Client.ino" sketch : 
 ```
 //Azure IoT Hub connection string
