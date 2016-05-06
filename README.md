@@ -61,13 +61,12 @@ In this document (and the code in the repo) you will
      ````
     3. Copy/paste your device connection string you noted down in Step 1/iii/e and paste in the same "TICC3200_AzureIoTHub_Client.ino" sketch : 
     
-    ````
-
+     ````Arduino
      //Azure IoT Hub connection string
      String IoTHubConnectionString = "{PUT YOUR IOT HUB CONNECTION STRING HERE}";
      //String IoTHubConnectionString = "HostName=youriothubname.azure-devices.net;DeviceId=TIcc3200-a;SharedAccessKey=8A0K1er45k5l3achAmda7UvVh6s4L7HTBdt/RnAdYuk=";
-```
-
+     ````
+ 
     4. Save your sketch, compile and upload it to your TI CC3200 XL
     5. Using Energia's "Serial Monitor", verify that your TI CC3200 XL is connected to your IoT Hub and started sending telemetry data
     
