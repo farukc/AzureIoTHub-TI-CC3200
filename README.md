@@ -80,7 +80,7 @@ In this document (and the code in the repo) you will
 
  3. See how to show your telemetry data in Microsoft Power BI : 
  
-   1. Create your free trial Microsoft Power BI account
+   1. Create your free trial Microsoft Power BI account :
    
      1. Go to [http://www.powerbi.com](http://www.powerbi.com) and click "Start for free" button : 
      ![](images/pbi_01_PowerBI_create_account.png)
