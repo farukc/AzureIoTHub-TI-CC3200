@@ -71,7 +71,7 @@ void setup() {
   char* DEVICE_ID = (char*)GetStringValue(splitStringByIndex(splitStringByIndex(IoTHubConnectionString, ';', 1), '=', 1));
   char* KEY = (char*)GetStringValue(splitStringByIndex(splitStringByIndex(IoTHubConnectionString, ';', 2), '=', 1));
   
-  String strSasToken = createIotHubSasToken((char*)KEY, urlEncode("iots1.azure-devices.net") + urlEncode("/devices/") +  "TIcc3200-a" );
+  String strSasToken = createIotHubSasToken((char*)KEY, urlEncode(HOST) + urlEncode("/devices/") +  urlEncode(DEVICE_ID) );
   //Serial.println("\nfull sas : " + fullSas);
 
   Serial.println("\nStarting connection to Azure IoT Hub...");
