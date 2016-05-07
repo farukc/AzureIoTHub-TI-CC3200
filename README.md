@@ -93,7 +93,6 @@ In this document (and the code in the repo) you will
      
      4. Check your email :
      ![](images/pbi_04_PowerBI_create_account.png)
-     
      ![](images/pbi_05_PowerBI_create_account.png)
      
      5. Fill in the necessary details : 
