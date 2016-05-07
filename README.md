@@ -82,20 +82,27 @@ In this document (and the code in the repo) you will
   1. Create your free trial Microsoft Power BI account
    1. Go to [http://www.powerbi.com](http://www.powerbi.com) and click "Start for free" button : 
    ![](images/pbi_01_PowerBI_create_account.png)
+
    2. We will use "Power BI" (not Power BI Desktop) : 
    ![](images/pbi_02_PowerBI_create_account.png)
+
    3. Use your non-free mail to sign up (You can use .edu email as well)
    ![](images/pbi_03_PowerBI_create_account.png)
+
    4. Check your email :
    ![](images/pbi_04_PowerBI_create_account.png)
 
    ![](images/pbi_05_PowerBI_create_account.png)
+   
    5. Fill in the necessary details : 
    ![](images/pbi_06_PowerBI_create_account.png)
+
    6. Power BI is going to create your account shortly : 
    ![](images/pbi_07_PowerBI_create_account.png)
+
    7. Your Power BI account is ready : 
    ![](images/pbi_08_PowerBI_create_account.png)
+
    8. Click "Get Data" to see from which data sources you can get data 
    ![](images/pbi_09_PowerBI_create_account.png)
    
