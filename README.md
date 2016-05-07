@@ -43,11 +43,17 @@ In this document (and the code in the repo) you will
       8. Just copy and note either of primary/secondary connection strings somewhere which will be using in coming steps
    3. Connect to your Azure IoT Hub using "Device Explorer" tool and create a "device" : 
       1. Go ahead and download free tool [Azure Device Explorer](https://github.com/Azure/azure-iot-sdks/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md) and install
-      2. Copy/Paste the connection string you noted down in step 1/ii/h into "IoT Hub Connection String" textarea under "Management" tab in Device Explorer and click "Update" button. You should get "connection succeeded"
-      3. Switch to "Management" tab and click "Create" button to create a new "device" in your IoT hub.
-      4. In the "" window give any name to your device (like "myCC3200-01"). You should get "" message when device is created in your IoT Hub
+      2. Copy/Paste the connection string you noted down in step 1/ii/h into "IoT Hub Connection String" textarea under "Management" tab in Device Explorer and click "Update" button. You should get "Settings updated succesfully" message as shown below : 
+      ![](images/devexp_01.png)
+      3. Switch to "Management" tab and click "Create" button to create a new "device" in your IoT hub : 
+      ![](images/devexp_02.png)
+      4. In the "Create Device" window, give any name to your device (like "myCC3200-01"). You should see "Device created" dialog box as shown below : 
+      ![](images/devexp_03.png)
+      You will also see your device is added to your IoT hub: 
+      ![](images/devexp_04.png)
       5. Right-mouse click on your device in the "Devices" list and select "Copy connection string for selected device" from the context menu. Note this connection string down
- 
+      ![](images/devexp_05.png)
+
  2.Program your CC3200 to connect your Azure IoT Hub
   1.Modifying necesary lines in "TICC3200_AzureIoTHub_Client.ino":
     1. Download all the files from this repo to a folder in your machine )
