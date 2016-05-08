@@ -146,10 +146,14 @@ Get your telemetry data from IoT Hub using Azure Stream Analytics by creating an
  4. **Create your Power BI dashboard to show telemetry data in a realtime dashboard**
    1. Login to your Power BI account in [http://www.powerbi.com](http://www.powerbi.com) and click anywhere on the left right below 9 dot logo : 
    ![](images/pbi_b_01.png)
-   2. Check your "Datasets" and you should see nothing or the "DataSet" name you gave in step 
+   2. Check your "Datasets" and you should see nothing or the "DataSet" name you set in step 3/xiii . If you see nothing be sure that your stream analytic job is running and you are not connected to your IoT Hub with "Device Explorer": 
    ![](images/pbi_b_02.png)
-
-   3. 
+   ![](images/pbi_b_03.png)
+   3. Click on your dataset and you should see your table name you set in step 3/xiii. Expand your table to see your "fields".
+   ![](images/pbi_b_04.png)
+   4. Under "Visualisations" select line chart icon : 
+   ![](images/pbi_b_05.png)
+   5. 
 
 
 
