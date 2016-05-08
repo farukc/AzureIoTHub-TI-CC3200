@@ -54,22 +54,20 @@ In this document (and the code in the repo) you will
    4. Program your CC3200 to connect your Azure IoT Hub
      1. Download all the .ino, .cpp and .h files from this repo to a folder in your machine
      2. Run your Energia and open "TICC3200_AzureIoTHub_Client.ino" sketch and put your WiFi name and password in the lines below
-
        ````Arduino
        // START: WiFi settings
        char SSID[] = "{YourWifiSSID}";
        char PASSWORD[] = "{YourWifiPassword}";
        // END: WiFi settings
        ````
-      3. Copy/paste your device connection string you noted down in Step 1/iii/e and paste in the same "TICC3200_AzureIoTHub_Client.ino" sketch : 
-
+     3. Copy/paste your device connection string you noted down in Step 1/iii/e and paste in the same "TICC3200_AzureIoTHub_Client.ino" sketch : 
        ````Arduino
        //Azure IoT Hub connection string
        String IoTHubConnectionString = "{PUT YOUR IOT HUB CONNECTION STRING HERE}";
        //String IoTHubConnectionString = "HostName=youriothubname.azure-devices.net;DeviceId=TIcc3200-a;SharedAccessKey=8A0K1er45k5l3achAmda7UvVh6s4L7HTBdt/RnAdYuk=";
        ````
-      4. Save your sketch, compile and upload it to your TI CC3200 XL
-      5. Using Energia's "Serial Monitor", verify that your TI CC3200 XL is connected to your IoT Hub and started sending telemetry data
+     4. Save your sketch, compile and upload it to your TI CC3200 XL
+     5. Using Energia's "Serial Monitor", verify that your TI CC3200 XL is connected to your IoT Hub and started sending telemetry data
 
  2. Get your telemetry data out of Azure Stream Analytics by creating an Azure Stream Analytics job, defining the "input", "output" and "query" and running it
    1. Go to [http://portal.azure.com](http://portal.azure.com) and login to the portal
