@@ -102,48 +102,54 @@ In this document (and the code in the repo) you will
 
  3. **See how to get your telemetry data out of [Azure Stream Analytics](https://azure.microsoft.com/en-us/services/stream-analytics/) by creating an Azure Stream Analytics job, defining the [input](https://azure.microsoft.com/en-us/documentation/articles/stream-analytics-define-inputs/), [output](https://azure.microsoft.com/en-us/documentation/articles/stream-analytics-define-outputs/) and [query](https://azure.microsoft.com/en-us/documentation/articles/stream-analytics-stream-analytics-query-patterns/) and running it 
 Get your telemetry data from IoT Hub using Azure Stream Analytics by creating an Azure Stream Analytics job, defining the "input", "output" and "query" and running it**
-   1. Go to [http://portal.azure.com](http://portal.azure.com) and login to the portal
-   2. Click "New" and select "Internet of Things" and then "Stream Analytics job" as shown below : 
-   ![](images/asa_01.png)
-   3. Give any name to your job as shown above
-   (Note that you should select the "Location" of your job same with your IoT Hub's location. In my example it's "North Europe")
-   4. When your Stream Analytics job created, click on your Stream Analytics job and scroll down to see the "Job Topology" for inputs,query and outputs
-   5. Click on "Inputs":
-   ![](images/asa_02.png)
-   6. Click on "Add" in the new blade :
-   ![](images/asa_03.png)
-   7. Give a name for your "Input Alias" to use in your query later. Select the "Source" as "IoT hub" and select "Use IoT hub from current subscription" for "Subscription" and find your "IoT hub". Leave the rest as in default values : 
-   ![](images/asa_04.png)
-   8. It's time to define an "Output" for "Power BI". As of this document is prepared, creating an output for Power BI in http://portal.azure.com is not ready yet and we should switch to Azure Classic Portal [http://manage.windowsazure.com](http://manage.windowsazure.com) and login with our Azure credentials. Your services are listed on the left column in the classic portal. Find "Stream Analytics" and click to see your stream analytics jobs. Find your job you created in previous step and click to see its details as shown below : 
-   ![](images/asa_05.png)
-   9. Click on "Outputs" either from the top or click "3 Add an output" as shown below : 
-   ![](images/asa_06.png)
-   10. Click "ADD AN OUTPUT" and select "Power BI" radio button : 
-   ![](images/asa_07.png)
-   ![](images/asa_08.png)
-   11. Now you will "Authorize" your stream analytics job to reach your Power BI account. Click on "Authorize Now" as shown below : 
-   ![](images/asa_09.png)
-   12. Login to your Power BI account using your non-free email address : 
-   ![](images/asa_10.png)
-   13. Authorization is completed. Now you will define your "Output Alias" to use in your stream analtyics "Query". Give a name to your output alias, give a name for your "DataSet" which will be shown in your Power BI acount, give a name to your "Table" which will again be shown in your Power BI when you started using your "DataSet", leave "Workspace" as default and check mark at the bottom right : 
-   ![](images/asa_11.png)
-   14. In the classic portal, operational messages are shown at the bottom. You will see that it will create your "output" and also will test the connection : 
-   ![](images/asa_12.png)
-   15. After successfuly passing the connection for your output for Power BI, you can click "Dismiss Completed" to clear those operational messages : 
-   ![](images/asa_13.png)
-   16. You will see that your "output" for Power BI is "OK" : 
-   ![](images/asa_14.png)
-   17. Now click on "Query" to write your simple Stream Analytics job : 
-   ![](images/asa_15.png)
-   18. As we are just trying to show the incoming telemetry in a realtime Power BI dashboard, we will not do a "filtering" in our query and it will be a simple "SELECT * INTO yourpowerbioutputalias FROM youriothubinputalias" query as shown below : 
-   ![](images/asa_16.png)
-   19. After writing your query, you will see that stream analytics asks when the output should start. Leave the default option "Job Start Time" and click check mark at the bottom right and wait for job to start (which may take several minutes) : 
-   ![](images/asa_17.png)
-   ![](images/asa_18.png)
-   ![](images/asa_19.png)
-   20. 
+  1. Go to [http://portal.azure.com](http://portal.azure.com) and login to the portal
+  2. Click "New" and select "Internet of Things" and then "Stream Analytics job" as shown below : 
+  ![](images/asa_01.png)
+  3. Give any name to your job as shown above
+  (Note that you should select the "Location" of your job same with your IoT Hub's location. In my example it's "North Europe")
+  4. When your Stream Analytics job created, click on your Stream Analytics job and scroll down to see the "Job Topology" for inputs,query and outputs
+  5. Click on "Inputs":
+  ![](images/asa_02.png)
+  6. Click on "Add" in the new blade :
+  ![](images/asa_03.png)
+  7. Give a name for your "Input Alias" to use in your query later. Select the "Source" as "IoT hub" and select "Use IoT hub from current subscription" for "Subscription" and find your "IoT hub". Leave the rest as in default values : 
+  ![](images/asa_04.png)
+  8. It's time to define an "Output" for "Power BI". As of this document is prepared, creating an output for Power BI in http://portal.azure.com is not ready yet and we should switch to Azure Classic Portal [http://manage.windowsazure.com](http://manage.windowsazure.com) and login with our Azure credentials. Your services are listed on the left column in the classic portal. Find "Stream Analytics" and click to see your stream analytics jobs. Find your job you created in previous step and click to see its details as shown below : 
+  ![](images/asa_05.png)
+  9. Click on "Outputs" either from the top or click "3 Add an output" as shown below : 
+  ![](images/asa_06.png)
+  10. Click "ADD AN OUTPUT" and select "Power BI" radio button : 
+  ![](images/asa_07.png)
+  ![](images/asa_08.png)
+  11. Now you will "Authorize" your stream analytics job to reach your Power BI account. Click on "Authorize Now" as shown below : 
+  ![](images/asa_09.png)
+  12. Login to your Power BI account using your non-free email address : 
+  ![](images/asa_10.png)
+  13. Authorization is completed. Now you will define your "Output Alias" to use in your stream analtyics "Query". Give a name to your output alias, give a name for your "DataSet" which will be shown in your Power BI acount, give a name to your "Table" which will again be shown in your Power BI when you started using your "DataSet", leave "Workspace" as default and check mark at the bottom right : 
+  ![](images/asa_11.png)
+  14. In the classic portal, operational messages are shown at the bottom. You will see that it will create your "output" and also will test the connection : 
+  ![](images/asa_12.png)
+  15. After successfuly passing the connection for your output for Power BI, you can click "Dismiss Completed" to clear those operational messages : 
+  ![](images/asa_13.png)
+  16. You will see that your "output" for Power BI is "OK" : 
+  ![](images/asa_14.png)
+  17. Now click on "Query" to write your simple Stream Analytics job : 
+  ![](images/asa_15.png)
+  18. As we are just trying to show the incoming telemetry in a realtime Power BI dashboard, we will not do a "filtering" in our query and it will be a simple "SELECT * INTO yourpowerbioutputalias FROM youriothubinputalias" query as shown below : 
+  ![](images/asa_16.png)
+  19. After writing your query, you will see that stream analytics asks when the output should start. Leave the default option "Job Start Time" and click check mark at the bottom right and wait for job to start (which may take several minutes) : 
+  ![](images/asa_17.png)
+  ![](images/asa_18.png)
+  ![](images/asa_19.png)
+  20. 
 
  4. **Create your Power BI dashboard to show telemetry data in a realtime dashboard**
+   1. Login to your Power BI account in [http://www.powerbi.com](http://www.powerbi.com) and click anywhere on the left right below 9 dot logo : 
+   ![](images/pbi_b_01.png)
+   2. Check your "Datasets" and you should see nothing or the "DataSet" name you gave in step 
+   ![](images/pbi_b_02.png)
+
+   3. 
 
 
 
