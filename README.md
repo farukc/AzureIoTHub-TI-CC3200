@@ -1,15 +1,17 @@
-## (Documentation is not finished yet!)
-# Sample Wiring code to use in Energia IDE for connecting Microsoft Azure IoT Hub with a TI CC3200 Launchpad XL
-Texas Instruments is one of the [Microsoft Azure Certified IoT partner] (https://azure.microsoft.com/en-us/marketplace/certified-iot-partners/) and TI CC3200 is listed in [Microsoft Azure IoT Developer Center](https://azure.microsoft.com/en-us/develop/iot/get-started/). Documentation in Azure IoT Developer Center includes an example for C code only. This document is prepared for TI CC3200 users who wants to connect to Azure IoT Hub using their  [Energia](http://www.energia.nu) IDE to start exploring the IoT world quickly.
+# Sample Wiring example code showing how to connect and send data to Microsoft Azure IoT Hub with a TI CC3200 Launchpad XL
+Texas Instruments is one of the [Microsoft Azure Certified IoT partner] (https://azure.microsoft.com/en-us/marketplace/certified-iot-partners/) and TI CC3200 is listed in [Microsoft Azure IoT Developer Center](https://azure.microsoft.com/en-us/develop/iot/get-started/). Documentation in Azure IoT Developer Center includes an example for C code only. This document is prepared for TI CC3200 users who wants to connect to Azure IoT Hub using their  [Energia](http://www.energia.nu) IDE to enter into IoT world quickly.<br><br>
+Please note that this is a device-to-cloud (D2C) scenario. If you want to extend this project by adding a feature for your CC3200 to receive "command" from cloud, which is called cloud-to-device C2D as well, you may need to implement MQTT instead of HTTP(s) which is used in this example. Built-in "PubSubClient" library (and examples) in your Energia IDE should help you connecting to IoT Hub with MQTT.
 
 ### Requirements:
 - TI CC3200 Launchpad XL
-- A Microsoft Account (if you have any @hotmail.com, @live.com etc. email you already have one)
-- Microsoft Azure Subscription (Azure free trial is OK as well)
 - Following (http://www.ti.com/cc3200start) if you're just starting to write code for TI CC3200 Launchpad XL using Energia(http://www.energia.nu)
+- A Microsoft Account (if you have any @hotmail.com, @live.com etc. email you already have one)
+- Microsoft Azure Subscription (Azure free trial is OK as well)<br>
+  (P.S.: DreamSpark Azure Subscription won't work as it doesn't allow you creating Azue IoT Hub, Stream Analytics )
+- A non-free email address to create a Power BI account (.edu email is ok as well)
 
-### Overview : 
-In this document (and the code in the repo) you will 
+### Summary : 
+By following this document (and the code in the repo) you will be able to, 
  1. Connect your TI CC3200 to Azure IoT Hub
   1. Create an Azure free trial account
   2. Create an Azure IoT Hub
@@ -100,8 +102,7 @@ In this document (and the code in the repo) you will
      ![](images/pbi_09_PowerBI_create_account.png) 
  
 
- 3. **See how to get your telemetry data out of [Azure Stream Analytics](https://azure.microsoft.com/en-us/services/stream-analytics/) by creating an Azure Stream Analytics job, defining the [input](https://azure.microsoft.com/en-us/documentation/articles/stream-analytics-define-inputs/), [output](https://azure.microsoft.com/en-us/documentation/articles/stream-analytics-define-outputs/) and [query](https://azure.microsoft.com/en-us/documentation/articles/stream-analytics-stream-analytics-query-patterns/) and running it 
-Get your telemetry data from IoT Hub using Azure Stream Analytics by creating an Azure Stream Analytics job, defining the "input", "output" and "query" and running it**
+ 3. **Get your telemetry data from IoT Hub using Azure Stream Analytics by creating an Azure Stream Analytics job, defining the "input", "output" and "query" and running it**
   1. Go to [http://portal.azure.com](http://portal.azure.com) and login to the portal
   2. Click "New" and select "Internet of Things" and then "Stream Analytics job" as shown below : 
   ![](images/asa_01.png)
@@ -121,7 +122,7 @@ Get your telemetry data from IoT Hub using Azure Stream Analytics by creating an
   10. Click "ADD AN OUTPUT" and select "Power BI" radio button : 
   ![](images/asa_07.png)
   ![](images/asa_08.png)
-  11. Now you will "Authorize" your stream analytics job to reach your Power BI account. Click on "Authorize Now" as shown below : 
+  11. Now you will "Authorize" your stream analytics job to reach your Power BI account. Click on "Authorize Now" as shown below :<br>
   ![](images/asa_09.png)
   12. Login to your Power BI account using your non-free email address : 
   ![](images/asa_10.png)
@@ -141,7 +142,6 @@ Get your telemetry data from IoT Hub using Azure Stream Analytics by creating an
   ![](images/asa_17.png)
   ![](images/asa_18.png)
   ![](images/asa_19.png)
-  20. 
 
  4. **Create your Power BI dashboard to show telemetry data in a realtime dashboard**
    1. Login to your Power BI account in [http://www.powerbi.com](http://www.powerbi.com) and click anywhere on the left right below 9 dot logo : 
@@ -151,9 +151,17 @@ Get your telemetry data from IoT Hub using Azure Stream Analytics by creating an
    ![](images/pbi_b_03.png)
    3. Click on your dataset and you should see your table name you set in step 3/xiii. Expand your table to see your "fields".
    ![](images/pbi_b_04.png)
-   4. Under "Visualisations" select line chart icon : 
+   4. Under "Visualisations" select line chart icon as shown below : 
    ![](images/pbi_b_05.png)
-   5. 
-
-
-
+   5. Maximize the line chart and under your table, drag&drop the "EventEnqueuedUTCTime" field into "Axis" field and "temperature" field into "Values" field : 
+   ![](images/pbi_b_06.png)
+   6. From "File" menu select "Save" and give any name to this "Report" and click "Save" button: 
+   ![](images/pbi_b_07.png)<br>![](images/pbi_b_08.png)
+   7. You will need to "Pin" this report into a "Dashboard" so you can see your line chart showing the telemetry in real-time. Click the "Pin" button on your reports top-right : 
+   ![](images/pbi_b_09.png)
+   8. You will get "Pin to dashboard" screen. As you don't have any dashboard yet, select "New dashboard" and give any name to this dashboard as shown below : 
+   ![](images/pbi_b_10.png)
+   9. On the left pane, you should see your dashboard is created under "Dashboards" with a "*" sign right next to it : 
+   ![](images/pbi_b_11.png)
+   10. Click on your dashboard and you should see your report updates the temperature value in real-time : 
+   ![](images/pbi_b_12.png)
