@@ -15,10 +15,8 @@ In this document (and the code in the repo) you will
   2. Create an Azure IoT Hub
   3. Connect to your Azure IoT Hub using "Device Explorer" tool and create a "device"
   4. Program your CC3200 to connect your Azure IoT Hub
- 2. See how to get your telemetry data out of [Azure Stream Analytics](https://azure.microsoft.com/en-us/services/stream-analytics/)
-  1. Create an Azure Stream Analytics service and define the [input](https://azure.microsoft.com/en-us/documentation/articles/stream-analytics-define-inputs/) and [output](https://azure.microsoft.com/en-us/documentation/articles/stream-analytics-define-outputs/) to it
-  2. Create an Azure Stream Analytics job and write your query retrieving your telemetry data from IoT Hub to [PowerBI](http://www.powerbi.com)
- 3. See how to show your telemetry data in Microsoft Power BI
+2. See how to get your telemetry data out of [Azure Stream Analytics](https://azure.microsoft.com/en-us/services/stream-analytics/) by creating an Azure Stream Analytics job, defining the [input](https://azure.microsoft.com/en-us/documentation/articles/stream-analytics-define-inputs/), [output](https://azure.microsoft.com/en-us/documentation/articles/stream-analytics-define-outputs/) and [query](https://azure.microsoft.com/en-us/documentation/articles/stream-analytics-stream-analytics-query-patterns/) and running it 
+3. See how to show your telemetry data in [Microsoft Power BI](http://www.powerbi.com)
   1. Create your free Microsoft Power BI account
   2. See how to use the dataset created by your Azure Stream Analytics job and show your telemetry data in this dataset live in a Power BI dashboard
 
@@ -75,8 +73,7 @@ In this document (and the code in the repo) you will
         4. Save your sketch, compile and upload it to your TI CC3200 XL
         5. Using Energia's "Serial Monitor", verify that your TI CC3200 XL is connected to your IoT Hub and started sending telemetry data
     
- 2. Get your telemetry data out of Azure Stream Analytics: 
-  1. Create an Azure Stream Analytics service and define the "input" and "output"
+ 2. Get your telemetry data out of Azure Stream Analytics by creating an Azure Stream Analytics job, defining the "input", "output" and "query" and running it
    1. Go to [http://portal.azure.com](http://portal.azure.com) and login to the portal
    2. Click "New" and select "Internet of Things" and then "Stream Analytics job" as shown below : 
    ![](images/asa_01.png)
@@ -100,14 +97,23 @@ In this document (and the code in the repo) you will
    ![](images/asa_09.png)
    12. Login to your Power BI account using your non-free email address : 
    ![](images/asa_10.png)
-   13. Authorization is completed. Now you will define your "Output Alias" to use in your stream analtyics "Query". Give a name to your output alias, give a name for your "DataSet" which will be shown in your Power BI acount, give a name to your "Table" which will again be shown in your Power BI when you started using your "DataSet", leave "Workspace" as default : 
+   13. Authorization is completed. Now you will define your "Output Alias" to use in your stream analtyics "Query". Give a name to your output alias, give a name for your "DataSet" which will be shown in your Power BI acount, give a name to your "Table" which will again be shown in your Power BI when you started using your "DataSet", leave "Workspace" as default and check mark at the bottom right : 
    ![](images/asa_11.png)
-   14. 
-
-   
-  2. Create an Azure Stream Analytics job and write your query retrieving your telemetry data from IoT Hub to Power BI
-  3. 
-
+   14. In the classic portal, operational messages are shown at the bottom. You will see that it will create your "output" and also will test the connection : 
+   ![](images/asa_12.png)
+   15. After successfuly passing the connection for your output for Power BI, you can click "Dismiss Completed" to clear those operational messages : 
+   ![](images/asa_13.png)
+   16. You will see that your "output" for Power BI is "OK" : 
+   ![](images/asa_14.png)
+   17. Now click on "Query" to write your simple Stream Analytics job : 
+   ![](images/asa_15.png)
+   18. As we are just trying to show the incoming telemetry in a realtime Power BI dashboard, we will not do a "filtering" in our query and it will be a simple "SELECT * INTO yourpowerbioutputalias FROM youriothubinputalias" query as shown below : 
+   ![](images/asa_16.png)
+   19. After writing your query, you will see that stream analytics asks when the output should start. Leave the default option "Job Start Time" and click check mark at the bottom right and wait for job to start (which may take several minutes) : 
+   ![](images/asa_17.png)
+   ![](images/asa_18.png)
+   ![](images/asa_19.png)
+   20. 
  3. See how to show your telemetry data in Microsoft Power BI : 
  
    1. Create your free Microsoft Power BI account :
