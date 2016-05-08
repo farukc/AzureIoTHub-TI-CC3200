@@ -99,7 +99,8 @@ In this document (and the code in the repo) you will
      8. Click "Get Data" to see from which data sources you can get data 
      ![](images/pbi_09_PowerBI_create_account.png) 
  
-3. See how to get your telemetry data out of [Azure Stream Analytics](https://azure.microsoft.com/en-us/services/stream-analytics/) by creating an Azure Stream Analytics job, defining the [input](https://azure.microsoft.com/en-us/documentation/articles/stream-analytics-define-inputs/), [output](https://azure.microsoft.com/en-us/documentation/articles/stream-analytics-define-outputs/) and [query](https://azure.microsoft.com/en-us/documentation/articles/stream-analytics-stream-analytics-query-patterns/) and running it 
+
+ 3. See how to get your telemetry data out of [Azure Stream Analytics](https://azure.microsoft.com/en-us/services/stream-analytics/) by creating an Azure Stream Analytics job, defining the [input](https://azure.microsoft.com/en-us/documentation/articles/stream-analytics-define-inputs/), [output](https://azure.microsoft.com/en-us/documentation/articles/stream-analytics-define-outputs/) and [query](https://azure.microsoft.com/en-us/documentation/articles/stream-analytics-stream-analytics-query-patterns/) and running it 
 Get your telemetry data from IoT Hub using Azure Stream Analytics by creating an Azure Stream Analytics job, defining the "input", "output" and "query" and running it
    1. Go to [http://portal.azure.com](http://portal.azure.com) and login to the portal
    2. Click "New" and select "Internet of Things" and then "Stream Analytics job" as shown below : 
@@ -142,7 +143,7 @@ Get your telemetry data from IoT Hub using Azure Stream Analytics by creating an
    ![](images/asa_19.png)
    20. 
 
-4. Create your Power BI dashboard to show telemetry data in a realtime dashboard
+ 4. Create your Power BI dashboard to show telemetry data in a realtime dashboard
 
 
 
