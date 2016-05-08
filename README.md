@@ -80,8 +80,30 @@ In this document (and the code in the repo) you will
    1. Go to [http://portal.azure.com](http://portal.azure.com) and login to the portal
    2. Click "New" and select "Internet of Things" and then "Stream Analytics job" as shown below : 
    ![](images/asa_01.png)
-   3. Click "New" and select "Internet of Things" and then "Stream Analytics job" as shown below : 
-   4. 
+   3. Give any name to your job as shown above
+   (Note that you should select the "Location" of your job same with your IoT Hub's location. In my example it's "North Europe")
+   4. When your Stream Analytics job created, click on your Stream Analytics job and scroll down to see the "Job Topology" for inputs,query and outputs
+   5. Click on "Inputs":
+   ![](images/asa_02.png)
+   6. Click on "Add" in the new blade :
+   ![](images/asa_03.png)
+   7. Give a name for your "Input Alias" to use in your query later. Select the "Source" as "IoT hub" and select "Use IoT hub from current subscription" for "Subscription" and find your "IoT hub". Leave the rest as in default values : 
+   ![](images/asa_04.png)
+   8. It's time to define an "Output" for "Power BI". As of this document is prepared, creating an output for Power BI in http://portal.azure.com is not ready yet and we should switch to Azure Classic Portal [http://manage.windowsazure.com](http://manage.windowsazure.com) and login with our Azure credentials. Your services are listed on the left column in the classic portal. Find "Stream Analytics" and click to see your stream analytics jobs. Find your job you created in previous step and click to see its details as shown below : 
+   ![](images/asa_05.png)
+   9. Click on "Outputs" either from the top or click "3 Add an output" as shown below : 
+   ![](images/asa_06.png)
+   10. Click "ADD AN OUTPUT" and select "Power BI" radio button : 
+   ![](images/asa_07.png)
+   ![](images/asa_08.png)
+   11. Now you will "Authorize" your stream analytics job to reach your Power BI account. Click on "Authorize Now" as shown below : 
+   ![](images/asa_09.png)
+   12. Login to your Power BI account using your non-free email address : 
+   ![](images/asa_10.png)
+   13. Authorization is completed. Now you will define your "Output Alias" to use in your stream analtyics "Query". Give a name to your output alias, give a name for your "DataSet" which will be shown in your Power BI acount, give a name to your "Table" which will again be shown in your Power BI when you started using your "DataSet", leave "Workspace" as default : 
+   ![](images/asa_11.png)
+   14. 
+
    
   2. Create an Azure Stream Analytics job and write your query retrieving your telemetry data from IoT Hub to Power BI
   3. 
