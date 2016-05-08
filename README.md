@@ -15,8 +15,8 @@ In this document (and the code in the repo) you will
   2. Create an Azure IoT Hub
   3. Connect to your Azure IoT Hub using "Device Explorer" tool and create a "device"
   4. Program your CC3200 to connect your Azure IoT Hub
-2. See how to get your telemetry data out of [Azure Stream Analytics](https://azure.microsoft.com/en-us/services/stream-analytics/) by creating an Azure Stream Analytics job, defining the [input](https://azure.microsoft.com/en-us/documentation/articles/stream-analytics-define-inputs/), [output](https://azure.microsoft.com/en-us/documentation/articles/stream-analytics-define-outputs/) and [query](https://azure.microsoft.com/en-us/documentation/articles/stream-analytics-stream-analytics-query-patterns/) and running it 
-3. See how to show your telemetry data in [Microsoft Power BI](http://www.powerbi.com)
+ 2. See how to get your telemetry data out of [Azure Stream Analytics](https://azure.microsoft.com/en-us/services/stream-analytics/) by creating an Azure Stream Analytics job, defining the [input](https://azure.microsoft.com/en-us/documentation/articles/stream-analytics-define-inputs/), [output](https://azure.microsoft.com/en-us/documentation/articles/stream-analytics-define-outputs/) and [query](https://azure.microsoft.com/en-us/documentation/articles/stream-analytics-stream-analytics-query-patterns/) and running it 
+ 3. See how to show your telemetry data in [Microsoft Power BI](http://www.powerbi.com)
   1. Create your free Microsoft Power BI account
   2. See how to use the dataset created by your Azure Stream Analytics job and show your telemetry data in this dataset live in a Power BI dashboard
 
