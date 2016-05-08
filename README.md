@@ -47,7 +47,7 @@ In this document (and the code in the repo) you will
       ![](images/devexp_02.png)
       4. In the "Create Device" window, give any name to your device (like "myCC3200-01"). You should see "Device created" dialog box as shown below : 
       ![](images/devexp_03.png)
-      You will also see your device is added to your IoT hub: 
+      <br>You will also see your device is added to your IoT hub: 
       ![](images/devexp_04.png)
       5. Right-mouse click on your device in the "Devices" list and select "Copy connection string for selected device" from the context menu. Note this connection string down
       ![](images/devexp_05.png)
