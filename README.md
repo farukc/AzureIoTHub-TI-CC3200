@@ -52,7 +52,7 @@ In this document (and the code in the repo) you will
       5. Right-mouse click on your device in the "Devices" list and select "Copy connection string for selected device" from the context menu. Note this connection string down
       ![](images/devexp_05.png)
    4. Program your CC3200 to connect your Azure IoT Hub
-      1. Download all the files from this repo to a folder in your machine
+      1. Download all the .ino, .cpp and .h files from this repo to a folder in your machine
       2. Run your Energia and open "TICC3200_AzureIoTHub_Client.ino" sketch and put your WiFi name and password in the lines below
 
      ````Arduino
@@ -61,6 +61,7 @@ In this document (and the code in the repo) you will
      char PASSWORD[] = "{YourWifiPassword}";
      // END: WiFi settings
      ````
+      
       3. Copy/paste your device connection string you noted down in Step 1/iii/e and paste in the same "TICC3200_AzureIoTHub_Client.ino" sketch : 
     
      ````Arduino
