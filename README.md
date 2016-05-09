@@ -1,9 +1,9 @@
-# Sample Wiring example code showing how to connect and send data to Microsoft Azure IoT Hub with a TI CC3200 Launchpad XL
+# Sample Wiring example code showing how to connect and send data to Microsoft Azure IoT Hub with a TI CC3200 Launchpad
 Texas Instruments is one of the [Microsoft Azure Certified IoT partner] (https://azure.microsoft.com/en-us/marketplace/certified-iot-partners/) and TI CC3200 is listed in [Microsoft Azure IoT Developer Center](https://azure.microsoft.com/en-us/develop/iot/get-started/). Documentation in Azure IoT Developer Center includes an example for C code only. This document is prepared for TI CC3200 users who wants to connect to Azure IoT Hub using their  [Energia](http://www.energia.nu) IDE to enter into IoT world quickly.<br><br>
 Please note that this is a device-to-cloud (D2C) scenario. If you want to extend this project by adding a feature for your CC3200 to receive "command" from cloud, which is called cloud-to-device C2D as well, you may need to implement MQTT instead of HTTP(s) which is used in this example. Built-in "PubSubClient" library (and examples) in your Energia IDE should help you connecting to IoT Hub with MQTT.
 
 ### Requirements:
-- TI CC3200 Launchpad XL
+- TI CC3200 Launchpad
 - Following (http://www.ti.com/cc3200start) if you're just starting to write code for TI CC3200 Launchpad XL using Energia(http://www.energia.nu)
 - A Microsoft Account (if you have any @hotmail.com, @live.com etc. email you already have one)
 - Microsoft Azure Subscription (Azure free trial is OK as well)<br>
