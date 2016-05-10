@@ -157,7 +157,7 @@ By following this document (and the code in the repo) you will be able to,
    ![](images/pbi_b_06.png)
    6. From "File" menu select "Save" and give any name to this "Report" and click "Save" button: 
    ![](images/pbi_b_07.png)<br>![](images/pbi_b_08.png)
-   7. You will need to "Pin" this report into a "Dashboard" so you can see your line chart showing the telemetry in real-time. Click the "Pin" button on your reports top-right : 
+   7. You will need to "Pin" this report into a "Dashboard" so you can see your line chart showing the telemetry in real-time. Click the "Pin" button on your reports top-right :<br>
    ![](images/pbi_b_09.png)
    8. You will get "Pin to dashboard" screen. As you don't have any dashboard yet, select "New dashboard" and give any name to this dashboard as shown below : 
    ![](images/pbi_b_10.png)
