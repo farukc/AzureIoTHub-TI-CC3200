@@ -138,7 +138,7 @@ By following this document (and the code in the repo) you will be able to,
   ![](images/asa_15.png)
   18. As we are just trying to show the incoming telemetry in a realtime Power BI dashboard, we will not do a "filtering" in our query and it will be a simple "SELECT * INTO yourpowerbioutputalias FROM youriothubinputalias" query as shown below : 
   ![](images/asa_16.png)
-  19. After writing your query, you will see that stream analytics asks when the output should start. Leave the default option "Job Start Time" and click check mark at the bottom right and wait for job to start (which may take several minutes) : 
+  19. After writing your query, you will see that stream analytics asks when the output should start. Leave the default option "Job Start Time" and click check mark at the bottom right and wait for job to start (which may take several minutes) :<br> 
   ![](images/asa_17.png)
   ![](images/asa_18.png)
   ![](images/asa_19.png)
