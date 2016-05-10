@@ -144,7 +144,7 @@ By following this document (and the code in the repo) you will be able to,
   ![](images/asa_19.png)
 
  4. **Create your Power BI dashboard to show telemetry data in a realtime dashboard**
-   1. Login to your Power BI account in [http://www.powerbi.com](http://www.powerbi.com) and click anywhere on the left right below 9 dot logo : 
+   1. Login to your Power BI account in [http://www.powerbi.com](http://www.powerbi.com) and click anywhere on the left to see "hamburger button" right below 9 dot logo : 
    ![](images/pbi_b_01.png)
    2. Check your "Datasets" and you should see nothing or the "DataSet" name you set in step 3/xiii . If you see nothing be sure that your stream analytic job is running and you are not connected to your IoT Hub with "Device Explorer": 
    ![](images/pbi_b_02.png)
